@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var no_of_students= 3;
+         var student_record = [];
+   
+         for(var i = 1;i <=no_of_students; i++){
+            
+        
+        var name =parseInt(prompt("enter the name"));
+        var rolno =parseInt(prompt("enter the rol no");
+        var age = parseInt(prompt("enter the age"));
+
+        // input the subject marks
+        var maths =parseInt(prompt("enter the maths mrks"));
+        var eng =parseInt(prompt("enter the english mrks"));
+        var urdu = parseInt(prompt("enter the urdu mrks"));
+        var bio = parseInt(prompt("enter the bio mrks"));
+        var chemistry =parseInt(prompt("enter the chemistry mrks"));
+        var obtainMarks =maths + eng + urdu + bio +chemistry;
+       
+       
+        var per = obtainMarks/500*100;
+        var obj ={
+        name :name,
+        rolno:rolno,
+        age:age,
+        maths:maths,
+        bio:bio,
+        eng:eng,
+        urdu:urdu,
+        chemistry:chemistry,
+    };
+    student_record.push(obj);
+   
+    
+        if(per >= 90){
+            console.log("name " + obj.name);
+            console.log("rolno " + obj.rolno);
+            console.log("age " + obj.age);
+            console.log("maths " + obj.maths);
+            console.log("eng " + obj.eng);
+            console.log("urdu " + obj.urdu);
+            console.log("bio " + obj.bio);
+            console.log("chemistry " + obj.chemistry);
+            
+            console.log("obtainMarks " + obj.obtainMarks);
+           
+            console.log("Grade A one");
+            console.log("name " + obj.name);
+            console.log("rolno " + obj.rolno);
+            console.log("age " + obj.age);
+            console.log("maths " + obj.maths);
+            console.log("eng " + obj.eng);
+            console.log("urdu " + obj.urdu);
+            console.log("bio " + obj.bio);
+            console.log("chemistry " + obj.chemistry);
+            console.log("obtainMarks " + obj.obtainMarks);
+           
+        // }else if(per >=80){
+            console.log("name " + obj.name);
+            console.log("rolno " + obj.rolno);
+            console.log("age " + obj.age);
+            console.log("maths " + obj.maths);
+            console.log("eng " + obj.eng);
+            console.log("urdu " + obj.urdu);
+            console.log("bio " + obj.bio);
+            console.log("chemistry " + obj.chemistry);
+            console.log("obtainMarks " + obj.obtainMarks);
+           
+            console.log("Grade A");
+            console.log("name " + obj.name);
+            console.log("name " + obj.rolno);
+            console.log("name " + obj.age);
+            console.log("maths " + obj.maths);
+            console.log("eng " + obj.eng);
+            console.log("urdu " + obj.urdu);
+            console.log("bio " + obj.bio);
+            console.log("chemistry " + obj.chemistry);
+            console.log("name " + obj.obtainMarks);
+           
+        // }else if(per >=70){
+            console.log("Grade B");
+            console.log("name " + obj.name);
+            console.log("rolno " + obj.rolno);
+            console.log("age " + obj.age);
+            console.log("maths " + obj.maths);
+            console.log("eng " + obj.eng);
+            console.log("urdu " + obj.urdu);
+            console.log("bio " + obj.bio);
+            console.log("chemistry " + obj.chemistry);
+            console.log("obtainMarks " + obj.obtainMarks);
+           
+        // }else if(per >= 60){
+            console.log("Grade c");
+            console.log("name " + obj.name);
+            console.log("rolno " + obj.rolno);
+            console.log("age " + obj.age);
+            console.log("maths " + obj.maths);
+            console.log("eng " + obj.eng);
+            console.log("urdu " + obj.urdu);
+            console.log("bio " + obj.bio);
+            console.log("chemistry " + obj.chemistry);
+            console.log("obtainMarks " + obj.obtainMarks);
+           
+        // }else{
+            console.log("fail");
+        }
+     } 
+    for(var x =1; x <= 2; x++){
+        console.log(x);
+    }
+    console.log(student_record); 
+
+       
+    </script>
+        
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var no_of_student =3;
+        var student_record =[];
+        for(var i = 1; i <=no_of_student;i++){
+            var name =prompt("Enter the name");
+            var rolno=prompt("Enter the rolno");
+            var age =prompt("Enter the age");
+
+            // input the subject marks
+            var maths =parseInt(prompt("Enter the maths mrks"));
+            var eng =parseInt(prompt("Enter the eng mrks"));
+            var urdu=parseInt(prompt("Enter the urdu mrks"));
+            var bio =parseInt(prompt("Enter the bio mrks"));
+            var chemistry=parseInt(prompt("Enter the chemistry mrks"));
+
+            var per =obtainmarks/500*100;
+            console.log(per);
+            var obj={
+                name:name,
+                rolno:rolno,
+                age:age,
+                maths:maths,
+                eng:eng,
+                urdu:urdu,
+                bio:bio,
+                chemistry :chemistry,
+
+            };
+            student_record.push(obj);
+        }
+        var detail =parseInt(prompt("detail of which rollno you print"));
+        for(var i =1; i <=no_of_students;i++){
+            var rollno =student_record[i].rollno;
+            var want_more =false;
+            if(rollno==detail){
+                if(per >=90){
+                    console.log("name" + student_record[i].name);
+                    console.log("rolno" + student_record[i].rolno);
+                    console.log("age" + student_record[i].age);
+                    console.log("maths" + student_record[i].maths);
+                    console.log("eng" + student_record[i].eng);
+                    console.log("urdu" + student_record[i].urdu);
+                    console.log("bio" + student_record[i].bio);
+                    console.log("chemistry" + student_record[i].chemistry);
+                    console.log("Grade is A");
+
+                }else if(per >=80){
+                    console.log("name" + student_record[i].name);
+                    console.log("rolno" + student_record[i].rolno);
+                    console.log("age" + student_record[i].age);
+                    console.log("maths" + student_record[i].maths);
+                    console.log("eng" + student_record[i].eng);
+                    console.log("urdu" + student_record[i].urdu);
+                    console.log("bio" + student_record[i].bio);
+                    console.log("chemistry" + student_record[i].chemistry);
+                    console.log("Grade is B");
+                }else if(per >=70){
+                    console.log("name" + student_record[i].name);
+                    console.log("rolno" + student_record[i].rolno);
+                    console.log("age" + student_record[i].age);
+                    console.log("maths" + tudent_record[i].maths);
+                    console.log("eng" + student_record[i].eng);
+                    console.log("urdu" + student_record[i].urdu);
+                    console.log("bio" + student_record[i].bio);
+                    console.log("chemistry" + student_record[i].chemistry);
+                    console.log("Grade is C");
+                }else if(per >= 60){
+                    console.log("name" + student_record[i].name);
+                    console.log("rolno" + student_record[i].rolno);
+                    console.log("age" + student_record[i].age);
+                    console.log("maths" + student_record[i].maths);
+                    console.log("eng" + student_record[i].eng);
+                    console.log("urdu" + student_record[i].urdu);
+                    console.log("bio" + student_record[i].bio);
+                    console.log("chemistry" + student_record[i].chemistry);
+                    console.log("You are fail");
+                }
+            }
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
